@@ -2,52 +2,75 @@
 
 error_reporting(-1);
 
-/* Коды для замены букв */
-/* $code = array(
-    'а'	=>	'1',
-    'б'	=>	'2',
-    'в'	=>	'3',
-    'г'	=>	'4',
-    'д'	=>	'5',
-    'е'	=>	'6',
-    'ё'	=>	'7',
-    'ж'	=>	'8',
-    'з'	=>	'9',
-    'и'	=>	'0',
-    'й'	=>	'#'
-);
+$price = 39999;
+$payment = 5000;
+$homoCredit = [
+    'procent' => 4,
+    'commission' => 500,
+    'bankName' => 'Homo Credit',
+];
 
-$text = 'нас предали. явка провалена.';
-$cipher = strtr($text, $code);
+$softBank = [
+    'procent' => 3,
+    'commission' => 1000,
+    'bankName' => 'Soft Bank',
+];
 
-echo "Оригинал: {$text}<br>Шифровка: {$cipher}<br>";
+$stravberryBank = [
+    'procent' => 2,
+    'commission' => 0,
+    'extra charge' => 7777,
+    'bankName' => 'Stravberry Bank',
+];
 
-echo "......................................................<br>";
+function takingDecision($price, $payment, $procent, $commission, $extraCharge)
+{
+    $result = [];
+    if (isset($extraCharge)) {
+        $price += $extraCharge;
+    }
+    $month = 0;
+    for ( $month = 0; $price > 0; $month++) {
 
-$code = array_flip($code);
-$cipher = strtr($text, $code);
+        $overPaymant += (($price / 100) * $procent);
+        //месячный процент
+        $overPaymant += $commission;
+        //комиссия банака
+
+        $totalOverPayment += $overPaymant;
+        //сумма общей переплаты
+
+        $price += $overPaymant;
+
+        $price -= $payment;
+        $overPaymant = 0;
+
+    }
+
+    $result= compact('month', 'totalOverPayment');// помещаям переменные в масив с сохранением ключа  и значения
+
+    return $result; //возвращаем результат вычслений
+}
+
+//функцыя для конвертацыи и вывода
+function conclusion ($result, $price, $bankName){
+    $years = round( $result['month']/12 );
+    $month =  $result['month'] % 12;
+    $finalPrice += $price;
+    $finalPrice += round( $result['totalOverPayment'] );
 
 
-echo "Оригинал: {$text}<br>Шифровка: {$cipher}<br>"; */
+    echo "Для погашения кредита в {$bankName}, eму понадобтлось {$years}год и {$month} месяц.Итоговая чумма стоставила {$finalPrice} р.<br> \r\n";
+}
 
-// Коды для замены букв
-$code = array(
-    'А'	=>	'4',
-    'Б'	=>	'6',
-    'В'	=>	'8',
-    'Г'	=>	'r',
-    'Е'	=>	'€',
-    'З'	=>	'3',
-    'Ж'	=>	'>|<',
-    'И'	=>	'N',
-    'K'	=>	'|<',
-    'Л'	=>	'^',
-    'С'	=>	')',
-    'P'	=>	'|o',
-    'У'	=>	'Y'
-);
+//сохраняем возвращаемый результат в масив
+$resultHomoB = takingDecision($price, $payment, $homoCredit['procent'], $homoCredit['commission'], null);
+$resultSoftB = takingDecision($price, $payment, $softBank['procent'], $softBank['commission'], null);
+$resultStrB = takingDecision($price, $payment, $stravberryBank['procent'], $stravberryBank['commission'], $stravberryBank['extra charge']);
 
-$text = 'Я У МАМЫ ПИ-ЭЙЧ-ПИ ИНЖЕНЕР-ПРОГРАММИСТ';
-$l33t = strtr($text, $code);
+conclusion ($resultHomoB, $price, $homoCredit['bankName']);
+conclusion ($resultSoftB, $price, $softBank['bankName']);
+conclusion ($resultStrB, $price, $stravberryBank['bankName']);
 
-echo "Ты говоришь: {$text}<br>А хакеры говорят: {$l33t}<br>";
+
+
