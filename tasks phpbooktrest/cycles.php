@@ -30,7 +30,7 @@ echo "Вам удет {$years} года, когда вы насобираете 
 
 //айфон в кредит . 40000 на +3% и 5000 р каждый месяц
 
-$sumOfCradit = 1000;
+/* $sumOfCradit = 1000;
 $finalPrice= $sumOfCradit;
 $payment = 5000; 
 $monthProcent = 3;
@@ -52,4 +52,6 @@ for (; $sumOfCradit > 0 ; $month++ ) {
  $years = round($month/12);
  $month = $month % 12;
  $finalPrice += round($totalOverPayment);
-echo "Ему понадобтлось {$years}год и {$month} месяц.Итоговая чумма стоставила {$finalPrice} р. ";
+echo "Ему понадобтлось {$years}год и {$month} месяц.Итоговая чумма стоставила {$finalPrice} р. "; */
+
+
