@@ -42,14 +42,10 @@ $peter->hours = array(40, 10, 40, 50);  // Петр взял отгул и по�
 $employees = array($ivan, $peter);
 
 
-echo "<table>";
-
+echo "<table border = 1 >";
+echo "<tr><td>Работник</td><td>Часы</td><td>Ставка</td><td>Зарплаата</tr>";
 // Сама таблица
 foreach ($employees as $employee) {
-    echo padRight($employee->name, $col1) .
-         padLeft($employee->getTotalHoursWorked(), $col2) . 
-         padLeft($employee->rate, $col3) . 
-         padLeft($employee->getSalary(), $col4) . "<br><br>";
+   echo "<tr><td>{$employee->name}</td> <td>{$employee->getTotalHoursWorked()}</td><td>{$employee->rate}</td> <td>{$employee->getSalary()}</td></tr>";
 }
-
 echo "</table>";
