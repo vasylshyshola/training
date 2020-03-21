@@ -4,7 +4,7 @@ class WritingToFile
 {
     public $fp;
     public $file = 'data.txt';
-    public $separation = "\n". '***************'. "\n";
+    public $separation = "\r\n". '***************'. "\r\n";
 
     public  function __construct($file)
     {
