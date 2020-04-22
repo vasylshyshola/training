@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="13183d4d-e1bf-479a-b6ec-8374294225d3" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable path="composer" />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/ishop/core" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1aoPoqT6tXIG18kRaIP8xRMb2Pr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../framework" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="13183d4d-e1bf-479a-b6ec-8374294225d3" name="Default Changelist" comment="" />
+      <created>1587399151044</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587399151044</updated>
+      <workItem from="1587399153758" duration="82000" />
+      <workItem from="1587399237083" duration="1473000" />
+      <workItem from="1587400803496" duration="488000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="728" y="469" width="523" height="175" key="ComposerInitDialogKey" timestamp="1587400936618">
+      <screen x="69" y="27" width="1851" height="1053" />
+    </state>
+    <state x="728" y="469" width="523" height="175" key="ComposerInitDialogKey/69.27.1851.1053@69.27.1851.1053" timestamp="1587400936618" />
+    <state x="777" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1587401290151">
+      <screen x="69" y="27" width="1851" height="1053" />
+    </state>
+    <state x="777" y="311" width="424" height="491" key="FileChooserDialogImpl/69.27.1851.1053@69.27.1851.1053" timestamp="1587401290151" />
+    <state x="589" y="309" width="1022" height="737" key="SettingsEditor" timestamp="1587400312341">
+      <screen x="69" y="27" width="1851" height="1053" />
+    </state>
+    <state x="589" y="309" width="1022" height="737" key="SettingsEditor/69.27.1851.1053@69.27.1851.1053" timestamp="1587400312341" />
+    <state x="650" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1587399161020">
+      <screen x="69" y="27" width="1851" height="1053" />
+    </state>
+    <state x="650" y="380" key="com.intellij.ide.util.TipDialog/69.27.1851.1053@69.27.1851.1053" timestamp="1587399161020" />
+  </component>
+</project>
